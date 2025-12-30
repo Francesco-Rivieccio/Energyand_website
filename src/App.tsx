@@ -15,11 +15,13 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* UPDATE THIS LINE BELOW */}
+      <BrowserRouter basename="/Energyand_website">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          {/* This Catch-all will now only trigger if they go to a page that truly doesn't exist */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
