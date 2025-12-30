@@ -5,7 +5,7 @@ import heroVideo from '@/assets/hero-video.mp4';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center section-light overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center section-dark overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -13,18 +13,18 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-background/60" />
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--surface-dark))]/70 via-[hsl(var(--surface-dark))]/50 to-[hsl(var(--surface-dark))]/80" />
       </div>
 
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 -left-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container-wide relative z-10 pt-32 pb-20">
@@ -88,12 +88,12 @@ const HeroSection = () => {
             ].map(({ icon: Icon, label }) => (
               <div
                 key={label}
-                className="flex flex-col items-center gap-3 p-6 rounded-2xl bg-secondary/50 hover:bg-secondary transition-colors"
+                className="flex flex-col items-center gap-3 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
                   <Icon className="w-6 h-6 text-primary" />
                 </div>
-                <span className="text-sm font-medium text-foreground/80">{label}</span>
+                <span className="text-sm font-medium text-surface-dark-foreground/80">{label}</span>
               </div>
             ))}
           </div>
@@ -102,8 +102,8 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
-        <div className="w-6 h-10 border-2 border-foreground/20 rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-foreground/40 rounded-full animate-bounce" />
+        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
+          <div className="w-1.5 h-3 bg-white/50 rounded-full animate-bounce" />
         </div>
       </div>
     </section>

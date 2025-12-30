@@ -34,15 +34,15 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="section-dark py-24 lg:py-32">
+    <section className="section-light py-24 lg:py-32">
       <div className="container-wide">
         {/* Header */}
         <div className="max-w-3xl mb-16">
           <span className="text-primary font-medium mb-4 block">Our Expertise</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-surface-dark-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Full-Spectrum Energy Solutions
           </h2>
-          <p className="text-surface-dark-foreground/70 text-lg leading-relaxed">
+          <p className="text-muted-foreground text-lg leading-relaxed">
             From initial concept to operational excellence, we deliver integrated engineering 
             and financial services that drive successful renewable energy projects.
           </p>
@@ -56,26 +56,26 @@ const ServicesSection = () => {
               <Link
                 key={service.title}
                 to="/projects"
-                className="group relative p-8 lg:p-10 rounded-3xl bg-surface-dark-foreground/5 border border-surface-dark-foreground/10 hover:border-primary/30 transition-all duration-500 hover-lift"
+                className="group relative p-8 lg:p-10 rounded-3xl bg-secondary border border-border hover:border-primary/30 transition-all duration-500 hover-lift"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start justify-between mb-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
                     <Icon className="w-7 h-7 text-primary" />
                   </div>
-                  <ArrowUpRight className="w-6 h-6 text-surface-dark-foreground/30 group-hover:text-primary transition-colors" />
+                  <ArrowUpRight className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
 
-                <h3 className="text-2xl font-semibold text-surface-dark-foreground mb-3">
+                <h3 className="text-2xl font-semibold text-foreground mb-3">
                   {service.title}
                 </h3>
-                <p className="text-surface-dark-foreground/60 leading-relaxed mb-8">
+                <p className="text-muted-foreground leading-relaxed mb-8">
                   {service.description}
                 </p>
 
-                <div className="pt-6 border-t border-surface-dark-foreground/10">
+                <div className="pt-6 border-t border-border">
                   <span className="text-3xl font-bold text-primary">{service.stats}</span>
-                  <span className="block text-sm text-surface-dark-foreground/50 mt-1">
+                  <span className="block text-sm text-muted-foreground mt-1">
                     {service.statsLabel}
                   </span>
                 </div>
