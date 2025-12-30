@@ -14,7 +14,21 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        sans: [
+          'Inter',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'SF Pro Display',
+          'SF Pro Text',
+          'Helvetica Neue',
+          'Helvetica',
+          'Arial',
+          'sans-serif',
+        ],
+      },
+      letterSpacing: {
+        tighter: '-0.04em',
+        tight: '-0.02em',
       },
       colors: {
         border: "hsl(var(--border))",
