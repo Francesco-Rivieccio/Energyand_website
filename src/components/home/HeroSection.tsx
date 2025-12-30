@@ -1,12 +1,28 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Wind, Sun, Zap, TrendingUp } from 'lucide-react';
+import heroVideo from '@/assets/hero-video.mp4';
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center section-light overflow-hidden">
-      {/* Background Elements */}
+      {/* Background Video */}
       <div className="absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-background/60" />
+      </div>
+
+      {/* Decorative Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 -left-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       </div>
