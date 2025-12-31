@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 
 const stats = [
   { value: 4.3, suffix: ' GW', label: 'Renewable Capacity Supported' },
-  { value: 5, prefix: '€', suffix: 'B+', label: 'Investment Value Advised' },
+  { value: 1.5, prefix: '€', suffix: 'B+', label: 'Investment Value Advised' },
   { value: 200, suffix: '+', label: 'Projects Completed' },
   { value: 15, suffix: '+', label: 'Countries Reached' },
 ];
@@ -67,7 +67,7 @@ const ImpactSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Over three decades of experience delivering measurable results 
-            for renewable energy projects worldwide.
+            for renewable energy projects across Europe.
           </p>
         </div>
 

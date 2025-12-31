@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import { Linkedin, Mail, Target, Award, Globe, Users } from 'lucide-react';
 
 const team = [
-  {
+    {
     name: 'Pio Carmelo Zelano',
     role: 'CEO',
     bio: 'Over 30 years of leadership in the renewable energy industry. Led some of the largest wind farm installations in Italy and has guided Energy& strategically for the past decade.',
@@ -35,6 +35,14 @@ const team = [
     linkedin: 'https://linkedin.com',
     initials: 'SB',
   },
+  {
+  name: 'Lucia Rivieccio',
+  role: 'Senior Accountant & Financial Advisor',
+  bio: 'Lucia brings a wealth of expertise in financial management and strategic advisory. She ensures robust fiscal oversight and provides key insights to support sustainable growth and investment decisions.',
+  email: 'l.rivieccio@energyand.com',
+  linkedin: 'https://linkedin.com',
+  initials: 'LR',
+  },
 ];
 
 const values = [
@@ -45,13 +53,13 @@ const values = [
   },
   {
     icon: Award,
-    title: 'Financial Sophistication',
-    description: 'Our unique combination of engineering and financial advisory sets us apart in the industry.',
+    title: 'Advisory',
+    description: 'Our unique combination of engineering and advisory sets us apart in the industry.',
   },
   {
     icon: Globe,
     title: 'Global Perspective',
-    description: 'With experience across 15+ countries, we understand the nuances of energy markets worldwide.',
+    description: 'With experience across 15+ countries, we understand the nuances of different energy markets.',
   },
   {
     icon: Users,
@@ -63,7 +71,7 @@ const values = [
 const achievements = [
   { value: '30+', label: 'Years of Experience' },
   { value: '4.3 GW', label: 'Capacity Supported' },
-  { value: '€5B+', label: 'Investment Advised' },
+  { value: '€1.5B+', label: 'Investment Advised' },
   { value: '200+', label: 'Projects Delivered' },
 ];
 
@@ -101,7 +109,7 @@ const About = () => {
               </h2>
               <p className="text-surface-dark-foreground/70 text-lg max-w-2xl mx-auto leading-relaxed">
                 We believe that the transition to renewable energy is the defining challenge 
-                of our generation. Our mission is to accelerate this transition through 
+                of our time. Our mission is to accelerate this transition through 
                 exceptional engineering and informed investment.
               </p>
             </div>
@@ -141,7 +149,7 @@ const About = () => {
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                 Our leadership team brings together decades of experience in renewable 
-                energy engineering, project development, and financial markets.
+                energy engineering, project development and advisory services.
               </p>
             </div>
 
@@ -228,11 +236,11 @@ const About = () => {
                 we'd love to hear from you.
               </p>
               <a
-                href="mailto:info@energyand.com"
+                href="mailto:info@energy-and.com"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium text-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300"
               >
                 <Mail className="w-5 h-5" />
-                info@energyand.com
+                info@energy-and.com
               </a>
             </div>
           </div>

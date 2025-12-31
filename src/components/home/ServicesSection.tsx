@@ -25,9 +25,9 @@ const services = [
   },
   {
     icon: TrendingUp,
-    title: 'Financial Advisory',
+    title: 'Advisory',
     description: 'Strategic investment guidance, capital structuring, and due diligence services for renewable energy portfolios.',
-    stats: '€5B+',
+    stats: '€1.5B+',
     statsLabel: 'Transactions Advised',
   },
 ];
@@ -44,7 +44,7 @@ const ServicesSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             From initial concept to operational excellence, we deliver integrated engineering 
-            and financial services that drive successful renewable energy projects.
+            and advisory services that drive successful renewable energy projects.
           </p>
         </div>
 

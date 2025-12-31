@@ -36,7 +36,7 @@ const HeroSection = () => {
             style={{ animationDelay: '0.1s' }}
           >
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            Engineering & Financial Advisory
+            Engineering & Advisory
           </div>
 
           {/* Headline */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
           >
             Engineering Growth.{' '}
             <span className="text-primary">Empowering Energy</span>{' '}
-            Investment.
+            Transition.
           </h1>
 
           {/* Subtitle */}
@@ -54,7 +54,7 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-up font-medium"
             style={{ animationDelay: '0.3s', textShadow: '0 1px 10px rgba(0,0,0,0.4)' }}
           >
-            We combine world-class engineering expertise with strategic financial advisory 
+            We combine engineering expertise with strategic advisory 
             to accelerate the global transition to renewable energy.
           </p>
 
@@ -85,7 +85,7 @@ const HeroSection = () => {
               { icon: Wind, label: 'Wind Energy' },
               { icon: Sun, label: 'Solar Energy' },
               { icon: Zap, label: 'Electrical Stations' },
-              { icon: TrendingUp, label: 'Finance Advisory' },
+              { icon: TrendingUp, label: 'Advisory' },
             ].map(({ icon: Icon, label }) => (
               <div
                 key={label}

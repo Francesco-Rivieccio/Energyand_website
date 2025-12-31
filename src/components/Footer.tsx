@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="font-semibold text-xl text-surface-dark-foreground">Energy&</span>
             </Link>
             <p className="text-surface-dark-foreground/70 max-w-md leading-relaxed">
-              Engineering excellence meets financial sophistication. We power the global energy transition through innovative solutions and strategic advisory.
+              We power the global energy transition through innovative solutions and strategic advisory.
             </p>
           </div>
 
@@ -49,16 +49,16 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="mailto:info@energyand.com"
+                  href="mailto:info@energy-and.com"
                   className="text-surface-dark-foreground/70 hover:text-primary transition-colors"
                 >
-                  info@energyand.com
+                  info@energy-and.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Linkedin className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/energy-and/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-surface-dark-foreground/70 hover:text-primary transition-colors"

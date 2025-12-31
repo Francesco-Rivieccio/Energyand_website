@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { Wind, Sun, Zap, TrendingUp, MapPin, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-type Category = 'all' | 'wind' | 'solar' | 'energy' | 'finance';
+type Category = 'all' | 'wind' | 'solar' | 'energy' | 'advisory';
 
 const projects = [
   {
@@ -42,7 +42,7 @@ const projects = [
     title: 'EDP Solar Italy XXIII',
     category: 'solar',
     location: 'Puglia, Italy',
-    capacity: '64 MWp',
+    capacity: '64 MW',
     description: 'Utility-scale photovoltaic installation by EDP Renewables producing approximately 90 GWh annually to meet the needs of 33,000 homes.',
     image: 'solar',
     achievements: ['90 GWh Annual Production', '33,000+ Homes Served', 'Solar PV Technology'],
@@ -64,7 +64,7 @@ const categories = [
   { id: 'wind', label: 'Wind', icon: Wind },
   { id: 'solar', label: 'Solar', icon: Sun },
   { id: 'energy', label: 'Energy', icon: Zap },
-  { id: 'finance', label: 'Finance', icon: TrendingUp },
+  { id: 'advisory', label: 'Advisory', icon: TrendingUp },
 ];
 
 const getCategoryIcon = (category: string) => {
@@ -72,7 +72,7 @@ const getCategoryIcon = (category: string) => {
     case 'wind': return Wind;
     case 'solar': return Sun;
     case 'energy': return Zap;
-    case 'finance': return TrendingUp;
+    case 'advisory': return TrendingUp;
     default: return Zap;
   }
 };
@@ -82,7 +82,7 @@ const getCategoryColor = (category: string) => {
     case 'wind': return 'bg-blue-500/10 text-blue-500';
     case 'solar': return 'bg-amber-500/10 text-amber-500';
     case 'energy': return 'bg-purple-500/10 text-purple-500';
-    case 'finance': return 'bg-primary/10 text-primary';
+    case 'advisory': return 'bg-primary/10 text-primary';
     default: return 'bg-primary/10 text-primary';
   }
 };
@@ -110,7 +110,7 @@ const Projects = () => {
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 From multi-gigawatt wind installations to billion-euro investment transactions, 
-                explore our track record of delivering exceptional results.
+                explore our track record of delivering tangible results.
               </p>
             </div>
           </div>
