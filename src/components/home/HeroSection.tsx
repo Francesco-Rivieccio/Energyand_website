@@ -45,7 +45,7 @@ const HeroSection = () => {
             style={{ animationDelay: '0.2s', textShadow: '0 4px 30px rgba(0,0,0,0.7), 0 2px 10px rgba(0,0,0,0.5)' }}
           >
             Engineering Growth.{' '}
-            <span className="text-gradient">Empowering Energy</span>{' '}
+            <span className="text-primary">Empowering Energy</span>{' '}
             Investment.
           </h1>
 
