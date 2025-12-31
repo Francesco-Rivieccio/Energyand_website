@@ -16,7 +16,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       {/* UPDATE THIS LINE BELOW */}
-      <BrowserRouter basename="/Energyand_website">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/projects" element={<Projects />} />
