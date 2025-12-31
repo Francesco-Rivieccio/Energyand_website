@@ -17,8 +17,9 @@ const HeroSection = () => {
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        {/* Gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--surface-dark))]/70 via-[hsl(var(--surface-dark))]/50 to-[hsl(var(--surface-dark))]/80" />
+        {/* Dark overlay for maximum text readability */}
+        <div className="absolute inset-0 bg-[hsl(var(--surface-dark))]/75" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--surface-dark))]/40 via-transparent to-[hsl(var(--surface-dark))]/60" />
       </div>
 
       {/* Decorative Elements */}
@@ -40,8 +41,8 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-up text-balance"
-            style={{ animationDelay: '0.2s' }}
+            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-up text-balance text-white drop-shadow-lg"
+            style={{ animationDelay: '0.2s', textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}
           >
             Engineering Growth.{' '}
             <span className="text-gradient">Empowering Energy</span>{' '}
@@ -50,8 +51,8 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p 
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-up"
-            style={{ animationDelay: '0.3s' }}
+            className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-up font-medium"
+            style={{ animationDelay: '0.3s', textShadow: '0 1px 10px rgba(0,0,0,0.4)' }}
           >
             We combine world-class engineering expertise with strategic financial advisory 
             to accelerate the global transition to renewable energy.
