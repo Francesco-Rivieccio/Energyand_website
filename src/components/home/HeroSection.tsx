@@ -41,8 +41,8 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-up text-balance text-white drop-shadow-lg"
-            style={{ animationDelay: '0.2s', textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}
+            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-up text-balance text-white drop-shadow-2xl"
+            style={{ animationDelay: '0.2s', textShadow: '0 4px 30px rgba(0,0,0,0.7), 0 2px 10px rgba(0,0,0,0.5)' }}
           >
             Engineering Growth.{' '}
             <span className="text-gradient">Empowering Energy</span>{' '}
